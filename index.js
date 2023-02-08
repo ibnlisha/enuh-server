@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express'
-import ErrorHandler from './handlers/errorHandler.js';
+import ErrorHandler from '/handlers/errorHandler.js';
 import router from './routes/auths.js'
 import scRouter from './routes/scientific_drawing.js'
 import articleRoutes from './routes/articles.js'
