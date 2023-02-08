@@ -1,15 +1,15 @@
 import 'dotenv/config'
 import express from 'express'
 import ErrorHandler from '/handlers/errorHandler.js';
-import router from './routes/auths.js'
-import scRouter from './routes/scientific_drawing.js'
-import articleRoutes from './routes/articles.js'
-import blogRoutes from './routes/blogs.js'
-import drawingRoutes from './routes/arts.js'
-import uploads from './routes/uploads.js'
+import router from '/routes/auths.js'
+import scRouter from '/routes/scientific_drawing.js'
+import articleRoutes from '/routes/articles.js'
+import blogRoutes from '/routes/blogs.js'
+import drawingRoutes from '/routes/arts.js'
+import uploads from '/routes/uploads.js'
 import cors from 'cors'
-import authorizeUser from './middlewares/auth.js'
-import subcribeRouter from './routes/subscription.js'
+import authorizeUser from '/middlewares/auth.js'
+import subcribeRouter from '/routes/subscription.js'
 
 const app = express()
 app.use(express.json())
