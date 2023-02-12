@@ -1,6 +1,6 @@
-CREATE DATABASE enuhdatabase;
+--CREATE DATABASE enuhdatabase;
 --connect to enuhdatabase
-\c enuhdatabase;
+--\c enuhdatabase;
 
 --add uuid extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
