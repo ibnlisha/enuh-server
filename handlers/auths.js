@@ -9,8 +9,6 @@ export const signup = async (req, res, next) => {
         const user = req.body
         //generate salt for password hashing
         const salt = bcrypt.genSaltSync(10);
-        console.log('salt =',salt)
-        console.log('data =', user)
         user.user_password = await bcrypt.hash(user.user_password, salt)
         const queryvalues = Object.values(user)
         const valTags = queryvalues.map((val, idx) => `$${idx+1}`)
